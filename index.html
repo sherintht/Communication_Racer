@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Communication Racer 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">📡 COMMUNICATION <span>RACER</span></div>
+    <div class="event">ECE DEPARTMENT ASSOCIATION • 24SPJPECT502</div>
+  </header>
+
+  <main>
+    <section id="home" class="screen active">
+      <div class="hero">
+        <div class="road-lines"></div>
+        <div class="bike">🏍️</div>
+        <p class="eyebrow">RIDE • ANSWER • OVERTAKE • CONQUER</p>
+        <h1>COMMUNICATION<br><span>RACER 2026</span></h1>
+        <p class="subtitle">100 questions. 4 modules. 1 championship.</p>
+        <button class="primary" onclick="show('registration')">▶ START RACE</button>
+        <div class="home-actions">
+          <button onclick="showLeaderboard()">🏆 LEADERBOARD</button>
+          <button onclick="show('howto')">ℹ HOW TO PLAY</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration" class="screen">
+      <div class="card narrow">
+        <h2>🏍️ DRIVER REGISTRATION</h2>
+        <p class="muted">Your details are saved locally for the department event.</p>
+        <label>Name</label><input id="playerName" placeholder="Enter full name">
+        <label>Roll Number</label><input id="rollNo" placeholder="Enter roll number">
+        <label>Class</label><input id="className" value="S5 ECE">
+        <div class="mode-info">
+          <div class="mode-card active"><b>📚 LEARNING MODE</b><strong>UNLIMITED TIME</strong><small>Learn at your own pace • No time pressure • 100 questions</small></div>
+          <div class="mode-card"><b>🏆 CHAMPIONSHIP MODE</b><strong>15 MINUTES</strong><small>Competitive race • Timer starts only after you begin</small></div>
+        </div>
+        <label>Mode</label>
+        <select id="gameMode" onchange="setModeInfo()">
+          <option value="learning">📚 Learning Mode — Unlimited Time</option>
+          <option value="championship">🏆 Championship Mode — 15 Minutes</option>
+        </select>
+        <button class="primary full" onclick="register()">CONTINUE →</button>
+        <button class="ghost full" onclick="show('home')">← BACK</button>
+      </div>
+    </section>
+
+    <section id="map" class="screen">
+      <div class="card mapcard">
+        <p class="eyebrow">CHOOSE YOUR EXPERIENCE</p>
+        <h2 id="modeTitle">📚 LEARNING MODE — UNLIMITED TIME</h2>
+        <p id="modeDescription" class="muted">This is a learning journey. Take your time, answer all 100 questions, and improve your communication knowledge.</p>
+        <div class="rules-banner"><b>🏆 Championship:</b> 15 minutes &nbsp; | &nbsp; <b>📚 Learning:</b> Unlimited time</div>
+        <h3>COMMUNICATION HIGHWAY</h3>
+        <div class="map">
+          <div class="checkpoint"><b>🏁</b><span>START</span></div>
+          <div class="track"></div>
+          <div class="checkpoint"><b>01</b><span>ANALOG</span><small>25 Q</small></div>
+          <div class="track"></div>
+          <div class="checkpoint"><b>02</b><span>DIGITAL</span><small>25 Q</small></div>
+          <div class="track"></div>
+          <div class="checkpoint"><b>03</b><span>MODULATION</span><small>25 Q</small></div>
+          <div class="track"></div>
+          <div class="checkpoint"><b>04</b><span>FINAL RACE</span><small>25 Q</small></div>
+          <div class="track"></div>
+          <div class="checkpoint boss"><b>👑</b><span>NOISE KING</span></div>
+        </div>
+        <button class="primary" onclick="startGame()">START CHAMPIONSHIP →</button>
+      </div>
+    </section>
+
+    <section id="game" class="screen">
+      <div class="hud">
+        <div>❤️ <span id="lives">3</span></div>
+        <div><span id="moduleLabel">MODULE 1</span> • Q <span id="qnum">1</span>/100</div>
+        <div id="timerBox">⏱ <span id="timer">UNLIMITED</span></div>
+        <div>⭐ <span id="score">0</span></div>
+      </div>
+      <div class="race-scene">
+        <div class="sky"></div>
+        <div class="mountain"></div>
+        <div class="road"></div>
+        <div class="vehicle v1">🚗</div><div class="vehicle v2">🚙</div><div class="vehicle v3">🚕</div>
+        <div class="player-bike">🏍️</div>
+        <div class="speed-lines"></div>
+        <div class="question-panel">
+          <div class="qmeta"><span id="difficulty">EASY</span><span id="streak">STREAK ×0</span></div>
+          <h3 id="question">Loading question…</h3>
+          <div id="options" class="options"></div>
+          <div id="feedback" class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="card result">
+        <p class="eyebrow">🏁 FINISH LINE</p>
+        <h2 id="resultTitle">COMMUNICATION RACER</h2>
+        <div class="bigscore"><span id="finalScore">0</span><small>/100</small></div>
+        <div class="rank" id="rankText">COMMUNICATION RACER</div>
+        <div class="stats">
+          <div><b id="correct">0</b><span>Correct</span></div>
+          <div><b id="accuracy">0%</b><span>Accuracy</span></div>
+          <div><b id="elapsed">0:00</b><span>Time</span></div>
+          <div><b id="overtakes">0</b><span>Overtakes</span></div>
+        </div>
+        <h3>MODULE PERFORMANCE</h3>
+        <div id="moduleStats"></div>
+        <div id="badges" class="badges"></div>
+        <div class="result-actions">
+          <button class="primary" onclick="showLeaderboard()">🏆 LEADERBOARD</button>
+          <button onclick="show('home')">HOME</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="screen">
+      <div class="card">
+        <h2>🏆 COMMUNICATION RACER — LEADERBOARD</h2>
+        <div id="leaderboardTable"></div>
+        <button class="ghost full" onclick="show('home')">← HOME</button>
+      </div>
+    </section>
+
+    <section id="howto" class="screen">
+      <div class="card">
+        <h2>🎮 HOW TO PLAY</h2>
+        <div class="howgrid">
+          <div><b>🏍️ RACE</b><p>Answer questions while the race is running.</p></div>
+          <div><b>⚡ SCORE</b><p>Correct answers increase your speed and score.</p></div>
+          <div><b>❤️ LIVES</b><p>Three lives. Wrong answers cost one life.</p></div>
+          <div><b>🚀 STREAK</b><p>Consecutive correct answers earn bonus points.</p></div>
+          <div><b>⏱ TIMER</b><p>Championship mode can be completed within 15 minutes.</p></div>
+          <div><b>🏆 BADGES</b><p>Earn badges for accuracy, speed and completion.</p></div>
+        </div>
+        <button class="primary" onclick="show('home')">← BACK</button>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="questions.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
