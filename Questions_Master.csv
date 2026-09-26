@@ -1,0 +1,101 @@
+﻿QuestionID,Module,CO,Difficulty,Question,OptionA,OptionB,OptionC,OptionD,Answer,Explanation,Active
+1,1,CO1,Easy,What is the main purpose of modulation?,To shift a message to a suitable frequency range,To increase noise,To remove information,To create distortion,A,Correct answer: To shift a message to a suitable frequency range.,YES
+2,1,CO1,Easy,"In AM, which parameter of the carrier is varied?",Amplitude,Frequency,Phase only,Pulse width,A,Correct answer: Amplitude.,YES
+3,1,CO1,Easy,What is DSB-SC?,Double Sideband Suppressed Carrier,Digital Sideband Signal Carrier,Double Signal Binary Carrier,Direct Sideband Switching Carrier,A,Correct answer: Double Sideband Suppressed Carrier.,YES
+4,1,CO1,Easy,FM varies the carrier's:,Frequency,Amplitude,Bandwidth only,Sampling rate,A,Correct answer: Frequency.,YES
+5,1,CO1,Easy,PM varies the carrier's:,Phase,Amplitude,Frequency only,Noise power,A,Correct answer: Phase.,YES
+6,1,CO1,Easy,Carson's rule estimates the:,FM bandwidth,AM power,Sampling rate,Quantization error,A,Correct answer: FM bandwidth.,YES
+7,1,CO1,Easy,SSB transmission sends:,One sideband,Both sidebands and full carrier,Only noise,Only the carrier,A,Correct answer: One sideband.,YES
+8,1,CO1,Easy,VSB is commonly associated with:,Television transmission,PCM coding,Line coding only,Quantization only,A,Correct answer: Television transmission.,YES
+9,1,CO1,Easy,Pre-emphasis is used mainly to:,Boost higher-frequency components before transmission,Remove the carrier,Reduce sampling rate,Increase quantization levels,A,Correct answer: Boost higher-frequency components before transmission.,YES
+10,1,CO1,Easy,De-emphasis is applied to:,Restore the original spectral balance,Create DSB-SC,Increase antenna height,Generate PCM,A,Correct answer: Restore the original spectral balance.,YES
+11,1,CO1,Medium,A superheterodyne receiver uses a:,Local oscillator and mixer,Quantizer only,Sampler only,Line encoder only,A,Correct answer: Local oscillator and mixer.,YES
+12,1,CO1,Medium,Noise is an:,Unwanted disturbance,Information signal,Carrier signal,Modulation index,A,Correct answer: Unwanted disturbance.,YES
+13,1,CO1,Medium,AM stands for:,Amplitude Modulation,Analog Mixing,Automatic Modulation,Amplitude Multiplication,A,Correct answer: Amplitude Modulation.,YES
+14,1,CO1,Medium,FM stands for:,Frequency Modulation,Frequency Mixing,Fixed Modulation,Fast Multiplexing,A,Correct answer: Frequency Modulation.,YES
+15,1,CO1,Medium,PM stands for:,Phase Modulation,Pulse Modulation,Power Mixing,Phase Multiplexing,A,Correct answer: Phase Modulation.,YES
+16,1,CO1,Medium,The carrier in DSB-SC is:,Suppressed,Amplified,Sampled,Quantized,A,Correct answer: Suppressed.,YES
+17,1,CO1,Medium,A major advantage of SSB is:,Reduced bandwidth,Higher noise,Larger carrier,More quantization,A,Correct answer: Reduced bandwidth.,YES
+18,1,CO1,Medium,Modulation can help reduce required:,Antenna size,Message information,Receiver sensitivity,Signal bandwidth in every case,A,Correct answer: Antenna size.,YES
+19,1,CO1,Hard,The modulation index in AM relates message amplitude to:,Carrier amplitude,Sampling frequency,Quantization step,Bit duration,A,Correct answer: Carrier amplitude.,YES
+20,1,CO1,Hard,"In FM, increasing frequency deviation generally:",Increases bandwidth,Removes noise completely,Stops modulation,Reduces carrier frequency to zero,A,Correct answer: Increases bandwidth.,YES
+21,1,CO1,Hard,A receiver converts a modulated signal back to information by:,Demodulation,Quantization,Sampling,Line coding,A,Correct answer: Demodulation.,YES
+22,1,CO1,Hard,The envelope detector is commonly used for:,AM detection,FM generation,PCM decoding,DPCM generation,A,Correct answer: AM detection.,YES
+23,1,CO1,Hard,FM is generally more resistant to amplitude noise than:,AM,PCM,DPCM,ASK only,A,Correct answer: AM.,YES
+24,1,CO1,Boss,The message signal is also called the:,Modulating signal,Carrier oscillator,Local oscillator,Noise source,A,Correct answer: Modulating signal.,YES
+25,1,CO1,Boss,The carrier frequency is usually:,Much higher than the message frequency,Equal to zero,Lower than all message components,A quantization level,A,Correct answer: Much higher than the message frequency.,YES
+26,2,CO2,Easy,Sampling converts a continuous-time signal into:,Discrete-time samples,Only binary noise,An FM carrier,An antenna pattern,A,Correct answer: Discrete-time samples.,YES
+27,2,CO2,Easy,Nyquist sampling rate is at least:,Twice the highest frequency,Equal to the highest frequency,Half the highest frequency,Ten times the carrier always,A,Correct answer: Twice the highest frequency.,YES
+28,2,CO2,Easy,Aliasing occurs when sampling frequency is:,Too low,Very high,Exactly infinite,Unrelated to signal frequency,A,Correct answer: Too low.,YES
+29,2,CO2,Easy,Quantization maps sample amplitudes to:,Discrete levels,Continuous frequencies,Carrier phases,Antenna lengths,A,Correct answer: Discrete levels.,YES
+30,2,CO2,Easy,Quantization error is the difference between:,Actual and quantized value,Carrier and noise frequency,Bit and baud rate,Message and carrier frequency,A,Correct answer: Actual and quantized value.,YES
+31,2,CO2,Easy,SQNR is a measure related to:,Signal-to-quantization-noise ratio,Sampling quality network rate,Signal quadrature noise response,Sideband quantization noise,A,Correct answer: Signal-to-quantization-noise ratio.,YES
+32,2,CO2,Easy,PCM stands for:,Pulse Code Modulation,Phase Carrier Mixing,Pulse Carrier Multiplexing,Power Code Measurement,A,Correct answer: Pulse Code Modulation.,YES
+33,2,CO2,Easy,"A PCM system includes sampling, quantization and:",Encoding,FM detection,Mixing only,De-emphasis only,A,Correct answer: Encoding.,YES
+34,2,CO2,Easy,Increasing the number of quantization levels generally:,Reduces quantization error,Always increases aliasing,Removes sampling,Stops encoding,A,Correct answer: Reduces quantization error.,YES
+35,2,CO2,Easy,μ-law is a form of:,Companding,Modulation index,Line coding,Demodulation,A,Correct answer: Companding.,YES
+36,2,CO2,Medium,Companding combines:,Compression and expanding,Carrier and sampling,Coding and mixing,Filtering and detection,A,Correct answer: Compression and expanding.,YES
+37,2,CO2,Medium,DPCM transmits:,Difference between samples,Only the carrier,Only noise,Complete analog waveform,A,Correct answer: Difference between samples.,YES
+38,2,CO2,Medium,Delta modulation transmits:,Changes in signal level,All sample amplitudes directly,Carrier phase,FM bandwidth,A,Correct answer: Changes in signal level.,YES
+39,2,CO2,Medium,Slope overload occurs when the input changes:,Too rapidly,Very slowly,Not at all,Only at zero,A,Correct answer: Too rapidly.,YES
+40,2,CO2,Medium,Granular noise is associated with:,Delta modulation,SSB only,AM envelope detection,Antenna design,A,Correct answer: Delta modulation.,YES
+41,2,CO2,Medium,Adaptive delta modulation changes parameters according to:,Signal characteristics,Carrier color,Room temperature only,Roll number,A,Correct answer: Signal characteristics.,YES
+42,2,CO2,Medium,Line coding converts digital data into:,Digital signal waveforms,Analog antennas,FM deviation,Quantization noise,A,Correct answer: Digital signal waveforms.,YES
+43,2,CO2,Medium,NRZ is a type of:,Line code,Receiver,Carrier,Filter,A,Correct answer: Line code.,YES
+44,2,CO2,Hard,Manchester coding contains:,A transition within each bit period,No transitions,Only analog values,Only carrier waves,A,Correct answer: A transition within each bit period.,YES
+45,2,CO2,Hard,Bit rate is measured in:,bits per second,hertz only,volts,meters,A,Correct answer: bits per second.,YES
+46,2,CO2,Hard,A sampler operates at the:,Sampling frequency,Carrier amplitude,Quantization error,Noise power,A,Correct answer: Sampling frequency.,YES
+47,2,CO2,Hard,The number of bits per PCM sample determines:,Number of quantization levels,Carrier frequency,Antenna gain,FM deviation,A,Correct answer: Number of quantization levels.,YES
+48,2,CO2,Hard,"For n bits, uniform PCM has:",2^n levels,n^2 levels,n/2 levels,2n levels,A,Correct answer: 2^n levels.,YES
+49,2,CO2,Boss,An anti-aliasing filter is placed:,Before sampling,After display only,Inside the battery,After the speaker only,A,Correct answer: Before sampling.,YES
+50,2,CO2,Boss,The purpose of encoding in PCM is to:,Represent quantized samples as binary words,Increase noise,Generate FM,Remove sampling,A,Correct answer: Represent quantized samples as binary words.,YES
+51,3,CO3,Easy,QPSK uses how many distinct phases?,Four,Two,Eight,One,A,Correct answer: Four.,YES
+52,3,CO3,Easy,BPSK uses how many phase states?,Two,Four,Eight,Sixteen,A,Correct answer: Two.,YES
+53,3,CO3,Easy,A raised-cosine filter helps control:,Bandwidth and intersymbol interference,Battery voltage,Carrier amplitude only,Antenna height,A,Correct answer: Bandwidth and intersymbol interference.,YES
+54,3,CO3,Easy,ISI stands for:,Intersymbol Interference,Inter-Signal Integration,Instant Signal Increase,Input Sampling Index,A,Correct answer: Intersymbol Interference.,YES
+55,3,CO3,Easy,The eye diagram is used to assess:,Signal quality and timing,Carrier frequency only,Antenna length,Power supply voltage,A,Correct answer: Signal quality and timing.,YES
+56,3,CO3,Easy,The Nyquist criterion aims for:,Zero ISI at sampling instants,Maximum noise,Higher aliasing,Carrier suppression,A,Correct answer: Zero ISI at sampling instants.,YES
+57,3,CO3,Easy,Roll-off factor controls excess:,Bandwidth,Power supply,Bit count only,Carrier amplitude,A,Correct answer: Bandwidth.,YES
+58,3,CO3,Easy,QPSK carries how many bits per symbol?,Two,One,Three,Four,A,Correct answer: Two.,YES
+59,3,CO3,Easy,BPSK is generally more robust than QPSK at the same bit energy in terms of:,Phase decision simplicity,Number of bits per symbol,Bandwidth efficiency,Symbol count,A,Correct answer: Phase decision simplicity.,YES
+60,3,CO3,Easy,A constellation diagram represents symbols in:,Signal space,Time only,Frequency only,Antenna space,A,Correct answer: Signal space.,YES
+61,3,CO3,Medium,AWGN stands for:,Additive White Gaussian Noise,Analog Waveform Gain Network,Automatic Wireless Gaussian Node,Amplitude Wideband Gain Noise,A,Correct answer: Additive White Gaussian Noise.,YES
+62,3,CO3,Medium,Euclidean distance in signal space measures:,Straight-line distance between points,Frequency deviation,Sampling period,Carrier amplitude,A,Correct answer: Straight-line distance between points.,YES
+63,3,CO3,Medium,The nearest constellation point is used for:,Decision making,Filtering noise only,Generating carrier,Sampling,A,Correct answer: Decision making.,YES
+64,3,CO3,Medium,Matched filters are designed to:,Maximize SNR at sampling time,Increase aliasing,Remove all bandwidth,Create FM,A,Correct answer: Maximize SNR at sampling time.,YES
+65,3,CO3,Medium,A symbol carries:,One or more bits,Exactly zero bits,Only analog information,Only noise,A,Correct answer: One or more bits.,YES
+66,3,CO3,Medium,Bit error rate measures:,Fraction of erroneous bits,Signal bandwidth,Carrier power only,Sampling frequency,A,Correct answer: Fraction of erroneous bits.,YES
+67,3,CO3,Medium,Higher SNR generally results in:,Lower BER,Higher BER always,No change ever,More aliasing,A,Correct answer: Lower BER.,YES
+68,3,CO3,Medium,Gray coding aims to make adjacent symbols differ by:,One bit,Four bits,No bits,All bits,A,Correct answer: One bit.,YES
+69,3,CO3,Hard,Eye opening indicates:,Timing and noise margin,Carrier frequency,Antenna size,Sampling theorem only,A,Correct answer: Timing and noise margin.,YES
+70,3,CO3,Hard,A closed eye often indicates:,Severe ISI/noise/timing problems,Perfect transmission,Zero noise,Infinite SNR,A,Correct answer: Severe ISI/noise/timing problems.,YES
+71,3,CO3,Hard,Pulse shaping is used to:,Control bandwidth and ISI,Increase antenna size,Remove bits,Generate quantization,A,Correct answer: Control bandwidth and ISI.,YES
+72,3,CO3,Hard,"In QPSK, I and Q branches are:",In-phase and quadrature,Input and quantizer,Index and quality,Internal and quick,A,Correct answer: In-phase and quadrature.,YES
+73,3,CO3,Hard,The constellation of BPSK has:,Two points,Four points,Eight points,Sixteen points,A,Correct answer: Two points.,YES
+74,3,CO3,Boss,The constellation of QPSK has:,Four points,Two points,Eight points,One point,A,Correct answer: Four points.,YES
+75,3,CO3,Boss,BER is commonly plotted against:,Eb/N0 or SNR,Antenna length,Room size,Carrier phase only,A,Correct answer: Eb/N0 or SNR.,YES
+76,4,CO4,Easy,A communication channel carries:,Information from transmitter to receiver,Only noise,Only power,Only antennas,A,Correct answer: Information from transmitter to receiver.,YES
+77,4,CO4,Easy,The transmitter prepares the message for:,Transmission through the channel,Quantization only,Noise generation,Battery charging,A,Correct answer: Transmission through the channel.,YES
+78,4,CO4,Easy,The receiver's main job is to:,Recover the transmitted information,Create the message,Increase noise,Change roll number,A,Correct answer: Recover the transmitted information.,YES
+79,4,CO4,Easy,Bandwidth describes a range of:,Frequencies,Voltages only,Distances,Bit errors only,A,Correct answer: Frequencies.,YES
+80,4,CO4,Easy,SNR compares signal power with:,Noise power,Carrier frequency,Sampling rate,Antenna height,A,Correct answer: Noise power.,YES
+81,4,CO4,Easy,Higher SNR generally means:,Cleaner communication,More noise,Less signal,More aliasing,A,Correct answer: Cleaner communication.,YES
+82,4,CO4,Easy,Multiplexing allows:,Multiple signals to share a communication medium,Only one bit to transmit,Noise to increase,Carrier to disappear,A,Correct answer: Multiple signals to share a communication medium.,YES
+83,4,CO4,Easy,FDM separates users by:,Frequency bands,Time slots,Code only,Amplitude levels only,A,Correct answer: Frequency bands.,YES
+84,4,CO4,Easy,TDM separates users by:,Time slots,Frequency only,Antenna length,Quantization levels,A,Correct answer: Time slots.,YES
+85,4,CO4,Easy,A communication system can be represented by:,"Source, transmitter, channel, receiver, destination","Battery, motor, tyre",Only transmitter,Only antenna,A,"Correct answer: Source, transmitter, channel, receiver, destination.",YES
+86,4,CO4,Medium,Attenuation means:,Reduction in signal strength,Increase in signal strength,Frequency doubling,Noise elimination,A,Correct answer: Reduction in signal strength.,YES
+87,4,CO4,Medium,Amplifiers are used to:,Increase signal level,Decrease all signals to zero,Sample signals,Encode PCM only,A,Correct answer: Increase signal level.,YES
+88,4,CO4,Medium,Repeaters can help:,Regenerate or retransmit signals,Create quantization error,Remove the message,Stop communication,A,Correct answer: Regenerate or retransmit signals.,YES
+89,4,CO4,Medium,A filter is used to:,Select desired frequency components,Increase all noise,Change roll number,Store questions,A,Correct answer: Select desired frequency components.,YES
+90,4,CO4,Medium,A low-pass filter passes:,Lower frequencies,Only highest frequency,No frequencies,Only noise,A,Correct answer: Lower frequencies.,YES
+91,4,CO4,Medium,A band-pass filter passes:,A selected band of frequencies,All frequencies equally,Only DC always,Only quantization noise,A,Correct answer: A selected band of frequencies.,YES
+92,4,CO4,Medium,Communication reliability can be improved by:,Appropriate coding and signal processing,Adding uncontrolled noise,Removing the receiver,Reducing all SNR,A,Correct answer: Appropriate coding and signal processing.,YES
+93,4,CO4,Medium,Error detection is used to:,Identify transmission errors,Increase carrier power only,Generate FM,Remove antennas,A,Correct answer: Identify transmission errors.,YES
+94,4,CO4,Hard,A checksum is a method for:,Error detection,Modulation,Sampling,Demodulation,A,Correct answer: Error detection.,YES
+95,4,CO4,Hard,A digital communication system represents information using:,Discrete symbols/bits,Only continuous amplitudes,Only carrier waves,Only noise,A,Correct answer: Discrete symbols/bits.,YES
+96,4,CO4,Hard,Latency means:,Delay in communication,Signal amplitude,Noise power,Bandwidth only,A,Correct answer: Delay in communication.,YES
+97,4,CO4,Hard,Throughput refers to:,Rate of successfully delivered data,Carrier phase,Antenna size,Quantization error,A,Correct answer: Rate of successfully delivered data.,YES
+98,4,CO4,Hard,A good communication system aims for:,Reliable information transfer,Maximum noise,Minimum information,Random distortion,A,Correct answer: Reliable information transfer.,YES
+99,4,CO4,Boss,The destination is where:,The information is delivered to the user,The carrier is generated,Sampling starts,Noise is created,A,Correct answer: The information is delivered to the user.,YES
+100,4,CO4,Boss,The channel may introduce:,"Noise, attenuation and distortion",Only information,Only perfect signals,Only quantization levels,A,"Correct answer: Noise, attenuation and distortion.",YES
