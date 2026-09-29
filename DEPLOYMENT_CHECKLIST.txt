@@ -1,0 +1,31 @@
+COMMUNICATION RACER 2026 — FINAL DEPLOYMENT CHECKLIST
+
+1. GitHub:
+   - Upload all files to repository root.
+   - Ensure index.html, style.css, game.js, questions.js are in the same folder.
+   - Settings > Pages > main > /(root).
+
+2. Test:
+   - Open the GitHub Pages URL.
+   - START RACE.
+   - Enter name + roll number.
+   - Select Learning Mode first.
+   - Answer A/B/C/D.
+   - Confirm correct/wrong feedback.
+   - Confirm sound.
+   - Confirm checkpoint after Q25.
+   - Confirm achievement popup.
+
+3. Google Sheets:
+   - Extensions > Apps Script.
+   - Paste GOOGLE_SHEETS_SETUP.gs.
+   - Run setupRacer().
+   - Import Questions_Master.csv into Questions tab.
+   - Deploy as Web App.
+   - Copy Web App URL into game.js.
+   - Commit/push game.js.
+
+4. Official event:
+   - Verify all 100 questions against approved 24SPJPECT502 syllabus.
+   - Verify CO mapping.
+   - Test with 2–3 students before the event.
