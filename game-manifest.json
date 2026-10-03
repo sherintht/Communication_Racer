@@ -1,0 +1,9 @@
+{
+  "name":"Communication Racer 2026",
+  "version":"2.0-gameplay",
+  "course":"24SPJPECT502",
+  "architecture":"arcade racing + embedded learning events",
+  "questions":100,
+  "worlds":4,
+  "core_loop":["race","avoid","collect","boost","challenge","choose_route","checkpoint","boss"]
+}

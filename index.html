@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>COMMUNICATION RACER 2026 | ECSA Department Activity</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot">
+  <div class="boot-mark"><span>CR</span><b>26</b></div>
+  <div class="boot-title">COMMUNICATION RACER 2026</div>
+  <div class="boot-sub">Initializing the communication racing engine...</div>
+  <div class="boot-bar"><i></i></div>
+</div>
+
+<div id="menu" class="screen landing hidden">
+  <div class="landing-bg">
+    <div class="grid-floor"></div><div class="scanline"></div>
+    <div class="tower t1"></div><div class="tower t2"></div><div class="tower t3"></div>
+    <div class="signal-orb orb1"></div><div class="signal-orb orb2"></div>
+    <div class="road-art"><div class="road-art-line l1"></div><div class="road-art-line l2"></div><div class="road-art-line l3"></div></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand-lockup"><div class="brand-mark">CR<span>26</span></div><div><strong>COMMUNICATION RACER</strong><small>24SPJPECT502 • ANALOG &amp; DIGITAL COMMUNICATION</small></div></div>
+    <div class="ecsa-badge"><span>ECSA</span><small>DEPARTMENT ACTIVITY</small></div>
+  </header>
+
+  <main class="landing-content">
+    <section class="hero-copy">
+      <div class="eyebrow"><i></i> S5 ECE • SPECIAL GAMIFIED LEARNING EXPERIENCE</div>
+      <h1>RACE THE<br><em>SIGNAL.</em></h1>
+      <p class="hero-tag">Learn the Signal. <b>Master the System.</b><br>Become the Engineer.</p>
+      <p class="hero-desc">A high-speed Communication Systems challenge where every decision changes the race.</p>
+      <div class="hero-actions">
+        <button id="startBtn" class="cta"><span class="pulse-dot"></span> START RACE <b>▶</b></button>
+        <button id="howBtn" class="ghost-btn">HOW TO PLAY <span>↓</span></button>
+      </div>
+      <div class="hero-stats"><div><b>04</b><small>WORLDS</small></div><div><b>100</b><small>CHALLENGES</small></div><div><b>∞</b><small>REPLAY</small></div><div><b>01</b><small>MISSION</small></div></div>
+    </section>
+
+    <aside class="race-preview">
+      <div class="preview-top"><span>LIVE RACE PREVIEW</span><b>● ONLINE</b></div>
+      <div class="mini-scene">
+        <div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div>
+        <div class="mini-road"><span></span><span></span><span></span></div>
+        <div class="mini-car player"><i></i></div><div class="mini-car rival"><i></i></div>
+        <div class="gate"><b>A</b><b>B</b><b>C</b><b>D</b></div>
+        <div class="signal-particle p1"></div><div class="signal-particle p2"></div><div class="signal-particle p3"></div>
+      </div>
+      <div class="preview-caption"><strong>ANSWER. ACCELERATE. OUTRUN THE NOISE.</strong><small>Questions appear as communication gates inside the race — not as a separate quiz.</small></div>
+    </aside>
+  </main>
+
+  <section class="feature-strip">
+    <button class="feature-card" id="howCard"><span class="fc-icon">⌁</span><div><strong>HOW TO PLAY</strong><small>Drive • Steer • Turbo • Answer at Signal Gates</small></div><b>→</b></button>
+    <button class="feature-card" id="champCard"><span class="fc-icon trophy">♛</span><div><strong>CHAMPIONSHIP</strong><small>100 challenges • combo • score attack • final profile</small></div><b>→</b></button>
+    <button class="feature-card" id="leagueCard"><span class="fc-icon">🏆</span><div><strong>CHAMPIONSHIP LEAGUE</strong><small>Official timing • leaderboard • prize eligibility</small></div><b>→</b></button><div class="feature-card reward"><span class="fc-icon">★</span><div><strong>CHAMPION REWARDS</strong><small>XP • Achievements • CO performance • Communication Champion</small></div><b>🏆</b></div>
+  </section>
+
+  <footer class="landing-footer"><span>DEPARTMENT OF ELECTRONICS &amp; COMMUNICATION ENGINEERING</span><span>SJCET PALAI</span><span>ICT-ENABLED CLASSROOM ACTIVITY • 2026</span></footer>
+
+  <div id="howPanel" class="info-panel hidden">
+    <div class="panel-inner"><button class="close-panel" id="closeHow">×</button><div class="panel-kicker">RACE BRIEFING</div><h2>HOW TO <em>PLAY</em></h2><div class="how-grid"><div><b>01</b><strong>DRIVE</strong><span>W / ↑ accelerate<br>A D / ← → steer<br>S / ↓ brake</span></div><div><b>02</b><strong>COLLECT</strong><span>Grab signal packets to build turbo and protect your run.</span></div><div><b>03</b><strong>CHALLENGE</strong><span>Communication questions appear as signal gates during the race.</span></div><div><b>04</b><strong>CONQUER</strong><span>Correct answers boost the race. Wrong answers create risk.</span></div></div><div class="panel-note">⚡ SPACE = TURBO &nbsp; • &nbsp; R = RECOVER &nbsp; • &nbsp; M = SOUND</div></div>
+  </div>
+
+  <div id="champPanel" class="info-panel hidden">
+    <div class="panel-inner"><button class="close-panel" id="closeChamp">×</button><div class="panel-kicker">THE CHAMPIONSHIP</div><h2>CAN YOU OUTRUN THE <em>NOISE?</em></h2><div class="reward-grid"><div class="reward-card"><span>01</span><b>RACE SCORE</b><small>Speed + clean driving + challenge performance</small></div><div class="reward-card"><span>02</span><b>COMBO XP</b><small>Chain correct decisions without breaking your streak</small></div><div class="reward-card"><span>03</span><b>ACHIEVEMENTS</b><small>Unlock Communication Engineer milestones</small></div><div class="reward-card"><span>04</span><b>FINAL PROFILE</b><small>See CO1–CO4 learning performance at the finish</small></div></div><div class="panel-note">CHAMPIONSHIP MODE • 100 COMMUNICATION CHALLENGES • SCORE ATTACK</div></div>
+  </div>
+</div>
+
+<div id="playerGate" class="modal hidden">
+  <div class="player-card">
+    <div class="modal-kicker">CHAMPIONSHIP REGISTRATION</div>
+    <h2>ENTER THE <em>RACE</em></h2>
+    <p class="modal-sub">Your official championship result will be linked to your player record.</p>
+    <div class="field-grid">
+      <label>STUDENT NAME<input id="studentName" maxlength="60" placeholder="Enter your name"></label>
+      <label>REGISTER NUMBER<input id="rollNo" maxlength="30" placeholder="Enter register number"></label>
+      <label>DEPARTMENT<input id="department" value="ECE" maxlength="40"></label>
+      <label>MODE<select id="raceMode"><option value="learning">LEARNING MODE • PRACTICE</option><option value="championship">CHAMPIONSHIP • OFFICIAL 15:00</option></select></label>
+    </div>
+    <div class="champ-timing"><span>⏱ OFFICIAL RUN</span><b>15:00</b><small>100 challenges • 1 official attempt • ranking by score, accuracy &amp; time</small></div>
+    <div id="eligibilityNote" class="eligibility">Practice is unlimited. Championship results are stored for the leaderboard.</div>
+    <div class="modal-actions"><button id="cancelPlayer" class="secondary">BACK</button><button id="confirmPlayer" class="cta">ENTER CHAMPIONSHIP ▶</button></div>
+  </div>
+</div>
+
+<div id="game" class="hidden">
+  <canvas id="raceCanvas"></canvas>
+  <div class="hud"><div class="hud-left"><div class="brand-mini">CR<span>26</span></div><div class="stat"><label>SPEED</label><b id="speed">0</b><em>KM/H</em></div><div class="stat"><label>SCORE</label><b id="score">0</b></div><div class="stat"><label>XP</label><b id="xp">0</b></div></div><div class="hud-center"><div id="worldName">ANALOG CITY</div><div class="progress"><i id="progressBar"></i></div><small id="questionProgress">SIGNALS 0/100 • PACKETS 0</small><div class="objective" id="objective">CHASE THE SIGNAL</div><div class="objective-progress"><i id="objectiveProgress"></i></div></div><div class="hud-right"><div class="bars"><span>TURBO</span><i><b id="turboBar"></b></i><span>RIVAL</span><i><b id="rivalBar"></b></i></div><div class="pill">COMBO <b id="combo">0</b></div><div class="pill">LIVES <b id="lives">♥♥♥</b></div><button id="soundBtn" class="icon-btn">🔊</button><button id="pauseBtn" class="icon-btn">Ⅱ</button></div></div>
+  <div id="challenge" class="challenge hidden"><div class="challenge-top"><span id="challengeTag">COMMUNICATION CHALLENGE</span><span id="challengeTimer">12</span></div><div id="question"></div><div id="options"></div><div id="explanation" class="explanation"></div></div>
+  <div id="toast"></div><div id="pause" class="overlay hidden"><div class="pause-card"><div class="brand">CR<span>26</span></div><h2>RACE PAUSED</h2><button id="resumeBtn">RESUME</button><button id="quitBtn" class="secondary">QUIT TO MENU</button></div></div>
+  <div id="touchControls" class="touch-controls"><button data-key="left">◀</button><button data-key="brake">▼</button><button data-key="right">▶</button><button data-key="turbo">⚡</button><button data-key="gas">▲</button></div>
+</div>
+
+<div id="league" class="screen hidden"><div class="league-card">
+  <div class="eyebrow">ECSA • COMMUNICATION RACER 2026</div><h1>CHAMPIONSHIP <em>LEAGUE</em></h1>
+  <div class="league-clock"><span>OFFICIAL RACE WINDOW</span><b id="leagueWindow">15:00</b><small id="leagueStatus">READY</small></div>
+  <div class="leaderboard" id="leaderboard"><div class="lb-head"><span>RANK</span><span>PLAYER</span><span>SCORE</span><span>ACC.</span><span>TIME</span></div></div>
+  <div class="prize-banner"><span>🏆</span><div><b>CHAMPION REWARD</b><small>Top official performer receives the designated ECSA / ECE prize.</small></div></div>
+  <button id="leagueBack" class="secondary">BACK TO HOME</button>
+</div></div>
+
+<div id="results" class="screen hidden"><div class="results-card"><div class="brand">CR<span>26</span></div><div class="eyebrow">RACE COMPLETE</div><h1>COMMUNICATION<br><b>ENGINEER PROFILE</b></h1><div id="resultPlayer" class="result-player">PLAYER</div><div id="resultReason" class="result-reason">RACE COMPLETE</div><div class="big-score"><span id="finalScore">0</span><small>SCORE</small></div><div class="result-grid"><div><small>ACCURACY</small><b id="finalAccuracy">0%</b></div><div><small>QUESTIONS</small><b id="finalQuestions">0/100</b></div><div><small>TIME</small><b id="finalTime">0:00</b></div><div><small>MAX COMBO</small><b id="finalCombo">0</b></div></div><div class="co-grid"><div><span>CO1</span><i><b id="co1">0%</b></i></div><div><span>CO2</span><i><b id="co2">0%</b></i></div><div><span>CO3</span><i><b id="co3">0%</b></i></div><div><span>CO4</span><i><b id="co4">0%</b></i></div></div><div class="skills"><span>Analog Communication</span><span>Digital Communication</span><span>Signal Processing</span><span>Digital Transmission</span><span>Digital Modulation</span><span>Problem Solving</span></div><div id="achievement" class="achievement">🏆 COMMUNICATION CHAMPION</div><button id="againBtn" class="start">RACE AGAIN <span>↻</span></button></div></div>
+<script src="questions.js"></script><script src="database.js"></script><script src="game.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+function panel(open){$('howPanel').classList.toggle('hidden',open!=='how');$('champPanel').classList.toggle('hidden',open!=='champ');}
+$('howBtn').onclick=()=>panel('how'); $('howCard').onclick=()=>panel('how'); $('champCard').onclick=()=>panel('champ'); $('closeHow').onclick=()=>panel(''); $('closeChamp').onclick=()=>panel('');
+$('leagueCard').onclick=()=>{ $('league').classList.remove('hidden'); $('menu').classList.add('hidden'); if(window.renderLeaderboard) window.renderLeaderboard(); };
+$('leagueBack').onclick=()=>{ $('league').classList.add('hidden'); $('menu').classList.remove('hidden'); };
+
+</script>
+</body></html>
