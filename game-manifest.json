@@ -1,0 +1,8 @@
+{
+  "name": "Communication Racer 2026",
+  "version": "1.0-phase1",
+  "questions": 100,
+  "course": "24SPJPECT502",
+  "renderer": "HTML5 Canvas perspective",
+  "audio": "WebAudio"
+}

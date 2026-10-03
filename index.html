@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Communication Racer 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot">
+  <div class="boot-logo">CR<span>26</span></div>
+  <div class="boot-title">COMMUNICATION RACER 2026</div>
+  <div class="boot-sub">Learn the Signal. Master the System. Become the Engineer.</div>
+  <div class="boot-bar"><i></i></div>
+  <small>Initializing communication engine...</small>
+</div>
+
+<div id="menu" class="screen hidden">
+  <div class="menu-card">
+    <div class="brand"><span>CR</span>26</div>
+    <div class="eyebrow">S5 ECE • 24SPJPECT502</div>
+    <h1>COMMUNICATION<br><b>RACER 2026</b></h1>
+    <p class="tagline">Learn the Signal. Master the System. Become the Engineer.</p>
+    <div class="mode-grid">
+      <button class="mode active" data-mode="learning"><strong>LEARNING MODE</strong><small>Practice • explanations • no pressure</small></button>
+      <button class="mode" data-mode="championship"><strong>CHAMPIONSHIP</strong><small>100 challenges • timed • score attack</small></button>
+    </div>
+    <div class="name-row"><input id="studentName" maxlength="28" placeholder="Engineer name (optional)"><input id="rollNo" maxlength="18" placeholder="Roll No. (optional)"></div>
+    <button id="startBtn" class="start">START RACE <span>▶</span></button>
+    <div class="controls">W / ↑ ACCELERATE &nbsp; A D / ← → STEER &nbsp; S / ↓ BRAKE &nbsp; SPACE TURBO &nbsp; R RECOVER &nbsp; M SOUND</div>
+  </div>
+</div>
+
+<div id="game" class="hidden">
+  <canvas id="raceCanvas"></canvas>
+  <div class="hud">
+    <div class="hud-left">
+      <div class="brand-mini">CR<span>26</span></div>
+      <div class="stat"><label>SPEED</label><b id="speed">0</b><em>KM/H</em></div>
+      <div class="stat"><label>SCORE</label><b id="score">0</b></div>
+      <div class="stat"><label>XP</label><b id="xp">0</b></div>
+    </div>
+    <div class="hud-center">
+      <div id="worldName">ANALOG CITY</div>
+      <div class="progress"><i id="progressBar"></i></div>
+      <small id="questionProgress">QUESTION 1 / 100</small>
+    </div>
+    <div class="hud-right">
+      <div class="pill">COMBO <b id="combo">0</b></div>
+      <div class="pill">LIVES <b id="lives">♥♥♥</b></div>
+      <button id="soundBtn" class="icon-btn">🔊</button>
+      <button id="pauseBtn" class="icon-btn">Ⅱ</button>
+    </div>
+  </div>
+  <div id="challenge" class="challenge hidden">
+    <div class="challenge-top"><span id="challengeTag">COMMUNICATION CHALLENGE</span><span id="challengeTimer">12</span></div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="explanation" class="explanation"></div>
+  </div>
+  <div id="toast"></div>
+  <div id="pause" class="overlay hidden">
+    <div class="pause-card"><div class="brand">CR<span>26</span></div><h2>RACE PAUSED</h2><button id="resumeBtn">RESUME</button><button id="quitBtn" class="secondary">QUIT TO MENU</button></div>
+  </div>
+  <div id="touchControls" class="touch-controls">
+    <button data-key="left">◀</button><button data-key="brake">▼</button><button data-key="right">▶</button><button data-key="turbo">⚡</button><button data-key="gas">▲</button>
+  </div>
+</div>
+
+<div id="results" class="screen hidden">
+  <div class="results-card">
+    <div class="brand">CR<span>26</span></div>
+    <div class="eyebrow">RACE COMPLETE</div>
+    <h1>COMMUNICATION<br><b>ENGINEER PROFILE</b></h1>
+    <div class="big-score"><span id="finalScore">0</span><small>SCORE</small></div>
+    <div class="result-grid">
+      <div><small>ACCURACY</small><b id="finalAccuracy">0%</b></div>
+      <div><small>QUESTIONS</small><b id="finalQuestions">0/100</b></div>
+      <div><small>TIME</small><b id="finalTime">0:00</b></div>
+      <div><small>MAX COMBO</small><b id="finalCombo">0</b></div>
+    </div>
+    <div class="co-grid">
+      <div><span>CO1</span><i><b id="co1">0%</b></i></div>
+      <div><span>CO2</span><i><b id="co2">0%</b></i></div>
+      <div><span>CO3</span><i><b id="co3">0%</b></i></div>
+      <div><span>CO4</span><i><b id="co4">0%</b></i></div>
+    </div>
+    <div class="skills"><span>Analog Communication</span><span>Digital Communication</span><span>Signal Processing</span><span>Digital Transmission</span><span>Digital Modulation</span><span>Problem Solving</span></div>
+    <div id="achievement" class="achievement">🏆 COMMUNICATION CHAMPION</div>
+    <button id="againBtn" class="start">RACE AGAIN <span>↻</span></button>
+  </div>
+</div>
+
+<script src="questions.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
